@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Puzzle - Go Viral!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/konva@8.4.3/konva.min.js"></script>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    
+    <!-- Game Container -->
+    <div class="container">
+        <h1 class="neon-title">SELF PUZZLE</h1>
+        
+        <label class="upload-btn">
+            📸 UPLOAD PHOTO
+            <input type="file" id="photoUpload" accept="image/*" hidden>
+        </label>
+
+        <div id="timer" class="neon-timer">01:00</div>
+        <div id="puzzle-container"></div>
+
+        <!-- Result Popups -->
+        <div id="win-popup" class="popup">
+            <img src="images/dance.gif" class="emoji">
+            <h2 class="neon-win">YOU WON! 🎉</h2>
+            <audio id="win-sound" src="sounds/win.mp3"></audio>
+        </div>
+
+        <div id="lose-popup" class="popup">
+            <img src="images/cry.gif" class="emoji">
+            <h2 class="neon-lose">TIME'S UP! 😭</h2>
+            <audio id="lose-sound" src="sounds/lose.mp3"></audio>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
