@@ -1,0 +1,104 @@
+/* Cosmic Background */
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+.stars, .twinkling {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars {
+  background:#000 url(https://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:-2;
+}
+
+.twinkling {
+  background:transparent url(https://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index:-1;
+  animation:move-twink-back 200s linear infinite;
+}
+
+/* Neon Design */
+.neon-title {
+  color: #fff;
+  text-shadow: 0 0 10px #fff,
+             0 0 20px #fff,
+             0 0 30px #e60073,
+             0 0 40px #e60073,
+             0 0 50px #e60073;
+  text-align: center;
+  font-size: 3em;
+}
+
+.upload-btn {
+  background: linear-gradient(45deg, #ff00ff, #00ffff);
+  padding: 15px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.upload-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #00ffff;
+}
+
+/* Puzzle Container */
+#puzzle-container {
+  width: 500px;
+  height: 500px;
+  margin: 20px auto;
+  border: 3px solid #00ffff;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Timer */
+.neon-timer {
+  font-size: 2.5em;
+  text-align: center;
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff00;
+}
+
+/* Result Popups */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.9);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  display: none;
+  border: 2px solid #ff00ff;
+  box-shadow: 0 0 50px #ff00ff;
+}
+
+.emoji {
+  width: 150px;
+  height: 150px;
+}
+
+.neon-win {
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff00;
+}
+
+.neon-lose {
+  color: #ff0000;
+  text-shadow: 0 0 10px #ff0000;
+}
